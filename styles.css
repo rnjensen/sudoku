@@ -5,6 +5,10 @@ body {
     background: #8ffdff;
 }
 
+button {
+    cursor: pointer;
+}
+
 .game {
     position: relative;
 }

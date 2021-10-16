@@ -73,6 +73,7 @@ const handleCellClick = (event) => {
         cell.removeEventListener("click", handleCellClick)
         cell.style.color = null
         cell.style['font-weight'] = null
+        cell.style.cursor = 'auto'
         checkVictory()
     }
     else {
@@ -83,9 +84,9 @@ const handleCellClick = (event) => {
 
 const addListeners = () => {
     cells = document.getElementsByClassName("cell")
-
     for(const cell of cells) {
         if(!cell.children.length) {
+            cell.style.cursor = 'pointer'
             cell.addEventListener("click", handleCellClick)
         }
     }
