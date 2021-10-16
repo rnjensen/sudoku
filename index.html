@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Sudoku</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="content">
+        <div class="menu">
+            <h2>Sudoku</h2>
+            <div class="difficulties">
+                <p>New puzzle: </p>
+                <button onclick="getBoard('easy')">Easy</button>
+                <button onclick="getBoard('medium')">Medium</button>
+                <button onclick="getBoard('hard')">Hard</button>
+            </div>
+        </div>
+        <div class="game">
+            <div id="overlay">
+                <img src="images/confetti.gif"/>
+            </div>
+            <div id="board"></div>
+        </div>
+        <div class="numbers">
+            <button id="numBtn1" class="numBtn" onclick="updateCurrentNumber(1)">1</button>
+            <button id="numBtn2" class="numBtn" onclick="updateCurrentNumber(2)">2</button>
+            <button id="numBtn3" class="numBtn" onclick="updateCurrentNumber(3)">3</button>
+            <button id="numBtn4" class="numBtn" onclick="updateCurrentNumber(4)">4</button>
+            <button id="numBtn5" class="numBtn" onclick="updateCurrentNumber(5)">5</button>
+            <button id="numBtn6" class="numBtn" onclick="updateCurrentNumber(6)">6</button>
+            <button id="numBtn7" class="numBtn" onclick="updateCurrentNumber(7)">7</button>
+            <button id="numBtn8" class="numBtn" onclick="updateCurrentNumber(8)">8</button>
+            <button id="numBtn9" class="numBtn" onclick="updateCurrentNumber(9)">9</button>
+        </div>
+    </div>
+  <div class="footer">
+    <a href="https://github.com/BYUCS260/weather-app-rnjensen">
+      <img src="images/GitHub-Mark-64px.png"/>
+    </a>
+  </div>
+  <script text="type/javascript" src="/script.js">
+  </script>
+</body>
+
+</html>
